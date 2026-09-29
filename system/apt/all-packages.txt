@@ -67,6 +67,7 @@ ca-certificates	20260601~24.04.1
 captain	1.1.2
 casper	1.498
 catdoc	1:0.95-5build1
+cbonsai	1.3.1-1
 celluloid	0.21+mint2+wilma
 cifs-utils	2:7.0-2ubuntu0.5
 cinnamon	6.6.9+zena
@@ -90,6 +91,7 @@ command-not-found	23.04.0
 console-setup	1.226ubuntu1.1
 console-setup-linux	1.226ubuntu1.1
 coreutils	9.4-3ubuntu6.3
+cpanminus	1.7047-1
 cpdb-backend-cups	2.0~b5-0ubuntu6
 cpio	2.15+dfsg-1ubuntu2.1
 cpp-13	13.3.0-6ubuntu2~24.04.1
@@ -462,6 +464,8 @@ libaccountsservice0:amd64	23.13.9-2ubuntu6.1
 libacl1:amd64	2.3.2-1build1.1
 libadwaita-1-0:amd64	1.5.0-2mint3+zara
 libaio1t64:amd64	0.3.113-6build1.1
+libalgorithm-c3-perl	0.11-2
+libany-uri-escape-perl	0.01-4
 libao4:amd64	1.2.2+20180113-1.1ubuntu4
 libao-common	1.2.2+20180113-1.1ubuntu4
 libaom3:amd64	3.8.2-2ubuntu0.2
@@ -509,6 +513,8 @@ libayatana-ido3-0.4-0:amd64	0.10.1-1build2
 libayatana-indicator3-7:amd64	0.9.4-1build1
 libbabeltrace1:amd64	1.5.11-3build3
 libbamf3-2t64:amd64	0.5.6+22.04.20220217-0ubuntu5
+libb-hooks-endofscope-perl	0.28-1
+libb-hooks-op-check-perl:amd64	0.22-3build1
 libbinutils:amd64	2.42-4ubuntu2.10
 libblas3:amd64	3.12.0-3build1.1
 libblkid1:amd64	2.39.3-9ubuntu6.6
@@ -579,6 +585,10 @@ libcinnamon-menu-3-0-dbg	6.6.0+zena
 libcjs0:amd64	115.1+zena
 libcjs-dbg	115.1+zena
 libcjson1:amd64	1.7.17-1
+libclass-c3-perl	0.35-2
+libclass-c3-xs-perl	0.15-1build6
+libclass-method-modifiers-perl	2.15-1
+libclass-xsaccessor-perl	1.19-4build4
 libclone-perl:amd64	0.46-1build3
 libclucene-contribs1t64:amd64	2.3.3.4+dfsg-1.2ubuntu2
 libclucene-core1t64:amd64	2.3.3.4+dfsg-1.2ubuntu2
@@ -595,6 +605,9 @@ libcolamd3:amd64	1:7.6.1+dfsg-1build1
 libcolord2:amd64	1.4.7-1build2
 libcolorhug2:amd64	1.4.7-1build2
 libcom-err2:amd64	1.47.0-2.4~exp1ubuntu4.1
+libcpan-changes-perl	0.500003-1
+libcpan-distnameinfo-perl	0.12-3
+libcpan-meta-check-perl	0.017-1
 libcpdb2t64:amd64	2.0~b5-1.2build1
 libcrack2:amd64	2.9.6-5.1build2
 libcrypt1:amd64	1:4.4.36-4build1
@@ -608,11 +621,15 @@ libcupsfilters2t64:amd64	2.0.0-0ubuntu7.2
 libcupsimage2t64:amd64	2.4.7-1.2ubuntu7.14
 libcurl3t64-gnutls:amd64	8.5.0-2ubuntu10.15
 libcurl4t64:amd64	8.5.0-2ubuntu10.15
+libcurses-perl	1.44-1build4
 libcvc0:amd64	6.6.2+zena
 libcvc-dbg:amd64	6.6.2+zena
 libcwidget4:amd64	0.5.18-6build1
 libdaemon0:amd64	0.14-7.1ubuntu4
 libdata-dump-perl	1.25-1
+libdata-optlist-perl	0.114-1
+libdata-perl-perl	0.002011-2
+libdata-section-perl	0.200008-1
 libdatrie1:amd64	0.2.13-3build1
 libdav1d7:amd64	1.4.1-1build1
 libdb5.3t64:amd64	5.3.28+dfsg2-7
@@ -630,6 +647,7 @@ libdebuginfod-common	0.190-1.1ubuntu0.1
 libdecor-0-0:amd64	0.2.2-1build2
 libdee-1.0-4:amd64	1.2.7+17.10.20170616-7build5
 libdeflate0:amd64	1.19-1build1.1
+libdevel-callchecker-perl:amd64	0.008-2build3
 libdevmapper1.02.1:amd64	2:1.02.185-3ubuntu3.2
 libdevmapper-event1.02.1:amd64	2:1.02.185-3ubuntu3.2
 libdirectfb-1.7-7t64:amd64	1.7.7-11.1ubuntu2
@@ -652,6 +670,7 @@ libdvdcss2:amd64	1.4.2-dmo1
 libdvdnav4:amd64	6.1.1-3build1
 libdvdread8t64:amd64	6.1.3-1.1build1
 libdw1t64:amd64	0.190-1.1ubuntu0.1
+libdynaloader-functions-perl	0.003-3
 libebackend-1.2-11t64:amd64	3.52.3-0ubuntu1.2
 libe-book-0.1-1:amd64	0.1.3-2build6
 libebook-1.2-21t64:amd64	3.52.3-0ubuntu1.2
@@ -684,6 +703,7 @@ libexempi8:amd64	2.6.5-1build1
 libexif12:amd64	0.6.24-1ubuntu0.24.04.1
 libexiv2-27:amd64	0.27.6-1ubuntu0.3
 libexpat1:amd64	2.6.1-2ubuntu0.6
+libexporter-tiny-perl	1.006002-1
 libext2fs2t64:amd64	1.47.0-2.4~exp1ubuntu4.1
 libexttextcat-2.0-0:amd64	3.4.7-1build1
 libexttextcat-data	3.4.7-1build1
@@ -704,6 +724,8 @@ libfile-desktopentry-perl	0.22-3
 libfile-fcntllock-perl	0.22-4ubuntu5
 libfile-listing-perl	6.16-1
 libfile-mimeinfo-perl	0.34-1
+libfile-pushd-perl	1.016-2
+libfile-slurp-perl	9999.32-2
 libflac12t64:amd64	1.4.3+ds-2.1ubuntu2
 libflashrom1:amd64	1.3.0-2.1ubuntu2
 libflatpak0:amd64	1.14.6-1ubuntu0.1
@@ -748,6 +770,7 @@ libgdk-pixbuf2.0-common	2.42.10+dfsg-3ubuntu3.3
 libgee-0.8-2:amd64	0.20.6-1build2
 libgeoclue-2-0:amd64	2.7.0-3ubuntu7
 libgeocode-glib-2-0:amd64	3.26.3-6build3
+libgetopt-long-descriptive-perl	0.111-1
 libgexiv2-2:amd64	0.14.2-2build3
 libgfortran5:amd64	14.2.0-4ubuntu2~24.04.1
 libgif7:amd64	5.2.2-1ubuntu1.2
@@ -874,12 +897,14 @@ libimagequant0:amd64	2.18.0-1build1
 libimath-3-1-29t64:amd64	3.1.9-3.1ubuntu2
 libimobiledevice6:amd64	1.3.0-8.1build3
 libimobiledevice-utils	1.3.0-8.1build3
+libimport-into-perl	1.002005-2
 libinih1:amd64	55-1ubuntu2
 libinput10:amd64	1.25.0-1ubuntu3.7
 libinput-bin	1.25.0-1ubuntu3.7
 libinstpatch-1.0-2:amd64	1.1.6-1build2
 libio-html-perl	1.004-3
 libio-socket-ssl-perl	2.085-1
+libio-stringy-perl	2.111-3
 libip4tc2:amd64	1.8.10-3ubuntu2
 libip6tc2:amd64	1.8.10-3ubuntu2
 libipc-system-simple-perl	1.30-2
@@ -931,10 +956,13 @@ liblerc4:amd64	4.0.0+ds-4ubuntu2
 liblightdm-gobject-1-0:amd64	1.30.0-0ubuntu14
 liblilv-0-0:amd64	0.24.22-1build1
 liblirc-client0t64:amd64	0.10.2-0.8build1
+liblist-moreutils-perl	0.430-2
+liblist-moreutils-xs-perl	0.430-3build5
 libllvm19:amd64	1:19.1.1-1ubuntu1~24.04.2
 libllvm20:amd64	1:20.1.2-0ubuntu1~24.04.3
 liblmdb0:amd64	0.9.31-1build1
 liblocale-gettext-perl	1.07-6ubuntu5
+liblocal-lib-perl	2.000029-1
 liblouis20:amd64	3.29.0-1build1
 liblouis-data	3.29.0-1build1
 liblouisutdml9t64:amd64	2.12.0-3.1build1
@@ -979,6 +1007,13 @@ libmjpegutils-2.1-0t64:amd64	1:2.1.0+debian-8.1build1
 libmm-glib0:amd64	1.23.4-0ubuntu2
 libmnl0:amd64	1.0.5-2build1
 libmodplug1:amd64	1:0.8.9.0-3build1
+libmodule-build-perl	0.423400-2
+libmodule-cpanfile-perl	1.1004-2
+libmodule-implementation-perl	0.09-2
+libmodule-runtime-perl	0.016-2
+libmodule-signature-perl	0.88-3
+libmoo-perl	2.005005-1
+libmoox-handlesvia-perl	0.001009-2
 libmount1:amd64	2.39.3-9ubuntu6.6
 libmozjs-115-0t64:amd64	115.10.0-1
 libmp3lame0:amd64	3.100-6build1
@@ -990,6 +1025,7 @@ libmpfr6:amd64	4.2.1-1build1.1
 libmpg123-0t64:amd64	1.32.5-1ubuntu1.1
 libmplex2-2.1-0t64:amd64	1:2.1.0+debian-8.1build1
 libmpv2:amd64	0.37.0-1ubuntu4
+libmro-compat-perl	0.15-2
 libmsgraph-0-1:amd64	0.2.1-0ubuntu3
 libmspack0t64:amd64	0.11-1.1build1
 libmspub-0.1-1:amd64	0.1.4-3build7
@@ -1004,6 +1040,8 @@ libmusicbrainz5cc2v5:amd64	5.1.0+git20150707-10build2
 libmwaw-0.3-3:amd64	0.3.22-1build1
 libmysofa1:amd64	1.3.2+dfsg-2ubuntu2
 libmythes-1.2-0:amd64	2:1.2.5-1build1
+libnamespace-autoclean-perl	0.29-2
+libnamespace-clean-perl	0.27-2
 libnatpmp1t64:amd64	20230423-1.2build1
 libnautilus-extension4:amd64	1:46.4-0ubuntu0.2
 libncurses6:amd64	6.4+20240113-1ubuntu2.2
@@ -1065,6 +1103,8 @@ liborcus-parser-0.18-0:amd64	0.19.2-3build3
 libostree-1-1:amd64	2024.5-1build2
 libp11-kit0:amd64	0.25.3-4ubuntu2.2
 libpackagekit-glib2-18:amd64	1.2.8+mint3+wilma
+libpackage-stash-perl	0.40-1
+libpackage-stash-xs-perl:amd64	0.30-1build4
 libpagemaker-0.0-0:amd64	0.0.4-1build4
 libpam0g:amd64	1.5.3-5ubuntu5.7
 libpam-cap:amd64	1:2.66-5ubuntu2.4
@@ -1083,7 +1123,12 @@ libpangomm-2.48-1t64:amd64	2.52.0-1build1
 libpangoxft-1.0-0:amd64	1.52.1+ds-1build1
 libpaper1:amd64	1.1.29build1
 libpaper-utils	1.1.29build1
+libparams-classify-perl:amd64	0.015-2build5
+libparams-util-perl	1.102-2build3
+libparams-validate-perl:amd64	1.31-2build3
+libparse-pmfile-perl	0.45-1
 libparted2t64:amd64	3.6-4build1
+libpath-tiny-perl	0.144-1
 libpcap0.8t64:amd64	1.10.4-4.1ubuntu3.1
 libpcaudio0:amd64	1.2-2build3
 libpci3:amd64	1:3.10.0-2build1
@@ -1109,6 +1154,8 @@ libplist-2.0-4:amd64	2.3.0-1~exp2build2
 libplymouth5:amd64	24.004.60-1ubuntu7.2
 libpng16-16t64:amd64	1.6.43-5ubuntu0.6
 libpocketsphinx3:amd64	0.8.0+real5prealpha+1-15ubuntu5
+libpod-markdown-perl	3.400000-1
+libpod-readme-perl	1.2.3-1
 libpolkit-agent-1-0:amd64	124-2ubuntu1.24.04.4
 libpolkit-gobject-1-0:amd64	124-2ubuntu1.24.04.4
 libpoppler134:amd64	24.02.0-1ubuntu9.9
@@ -1158,6 +1205,9 @@ librda0:amd64	0.0.5-1.1build2
 librda-common	0.0.5-1.1build2
 librdf0t64:amd64	1.0.17-3.1ubuntu3
 libreadline8t64:amd64	8.2-4build1
+libreadonly-perl	2.050-3
+libref-util-perl	0.204-2
+libref-util-xs-perl	0.117-2build4
 libreiserfscore0t64	1:3.6.27-7.1build1
 libreoffice-base-core	4:24.2.7-0ubuntu0.24.04.6
 libreoffice-calc	4:24.2.7-0ubuntu0.24.04.6
@@ -1183,6 +1233,7 @@ librevenge-0.0-0:amd64	0.0.5-3build1
 librhythmbox-core10:amd64	3.4.7-2ubuntu6
 librist4:amd64	0.2.10+dfsg-2
 libroc0.3:amd64	0.3.0+dfsg-7ubuntu2
+librole-tiny-perl	2.002004-1
 librsvg2-2:amd64	2.58.0+dfsg-1build1
 librsvg2-common:amd64	2.58.0+dfsg-1build1
 librtmp1:amd64	2.4+20151223.gitfa8646d.1-2build7
@@ -1228,6 +1279,7 @@ libsndio7.0:amd64	1.9.0-0.3build3
 libsnmp40t64:amd64	5.9.4+dfsg-1.1ubuntu3.2
 libsnmp-base	5.9.4+dfsg-1.1ubuntu3.2
 libsodium23:amd64	1.0.18-1ubuntu0.24.04.1
+libsoftware-license-perl	0.104006-1
 libsonic0:amd64	0.2.0-13build1
 libsord-0-0:amd64	0.16.16-2build1
 libsoundtouch1:amd64	2.3.2+ds1-1build1
@@ -1259,6 +1311,14 @@ libstartup-notification0:amd64	0.12-6build3
 libstdc++-13-dev:amd64	13.3.0-6ubuntu2~24.04.1
 libstdc++6:amd64	14.2.0-4ubuntu2~24.04.1
 libstemmer0d:amd64	2.2.0-4build1
+libstrictures-perl	2.000006-1
+libstring-shellquote-perl	1.04-3
+libsub-exporter-perl	0.990-1
+libsub-exporter-progressive-perl	0.001013-3
+libsub-identify-perl	0.14-3build3
+libsub-install-perl	0.929-1
+libsub-name-perl:amd64	0.27-1build3
+libsub-quote-perl	2.006008-1ubuntu1
 libsuitesparseconfig7:amd64	1:7.6.1+dfsg-1build1
 libsvtav1enc1d1:amd64	1.7.0+dfsg-2build1
 libswresample4:amd64	7:6.1.1-3ubuntu5
@@ -1276,6 +1336,7 @@ libteamdctl0:amd64	1.31-1build3
 libtevent0t64:amd64	0.16.1-2build1
 libtext-charwidth-perl:amd64	0.04-11build3
 libtext-iconv-perl:amd64	1.7-8build3
+libtext-template-perl	1.61-1
 libtext-wrapi18n-perl	0.06-10
 libthai0:amd64	0.1.29-2build1
 libthai-data	0.1.29-2build1
@@ -1302,12 +1363,15 @@ libtss2-tcti-device0t64:amd64	4.0.1-7.1ubuntu5.1
 libtss2-tcti-mssim0t64:amd64	4.0.1-7.1ubuntu5.1
 libtss2-tcti-swtpm0t64:amd64	4.0.1-7.1ubuntu5.1
 libtwolame0:amd64	0.4.0-2build3
+libtype-tiny-perl	2.004000-1
+libtype-tiny-xs-perl:amd64	0.025-1build3
 libubsan1:amd64	14.2.0-4ubuntu2~24.04.1
 libuchardet0:amd64	0.0.8-1build1
 libudev1:amd64	255.4-1ubuntu8.17
 libudfread0:amd64	1.1.2-1build1
 libudisks2-0:amd64	2.10.1-6ubuntu1.5
 libunibreak5:amd64	5.1-2build1
+libunicode-utf8-perl	0.62-2build3
 libunistring5:amd64	1.1-2build1.1
 libuno-cppu3t64	4:24.2.7-0ubuntu0.24.04.6
 libuno-cppuhelpergcc3-3t64	4:24.2.7-0ubuntu0.24.04.6
@@ -1318,6 +1382,7 @@ libunshield0:amd64	1.5.1-1
 libunwind8:amd64	1.6.2-3build1.1
 libupower-glib3:amd64	1.90.3-1
 liburcu8t64:amd64	0.14.0-3.1build1
+liburi-escape-xs-perl	0.14-2build4
 liburing2:amd64	2.5-1build1
 liburi-perl	5.27-1
 libusb-1.0-0:amd64	2:1.0.27-1
@@ -1328,6 +1393,7 @@ libv4l-0t64:amd64	1.26.1-4build3
 libv4lconvert0t64:amd64	1.26.1-4build3
 libva2:amd64	2.20.0-2ubuntu0.2
 libva-drm2:amd64	2.20.0-2ubuntu0.2
+libvariable-magic-perl	0.63-1build3
 libva-wayland2:amd64	2.20.0-2ubuntu0.2
 libva-x11-2:amd64	2.20.0-2ubuntu0.2
 libvdpau1:amd64	1.5-2build1
@@ -1845,6 +1911,7 @@ sgml-data	2.0.11+nmu1
 shared-mime-info	2.4-4
 shim-signed	1.58+15.8-0ubuntu1
 simple-scan	46.0-0ubuntu2.1mint1+zena
+sl	5.02-1
 slick-greeter	2.2.6+zena
 smbclient	2:4.19.5+dfsg-4ubuntu9.7
 socat	1.8.0.0-4ubuntu0.1

@@ -63,6 +63,7 @@ ca-certificates
 captain
 casper
 catdoc
+cbonsai
 celluloid
 cifs-utils
 cinnamon
@@ -86,6 +87,7 @@ command-not-found
 console-setup
 console-setup-linux
 coreutils
+cpanminus
 cpdb-backend-cups
 cpio
 cpp
@@ -584,6 +586,7 @@ libcupsfilters2t64
 libcupsimage2t64
 libcurl3t64-gnutls
 libcurl4t64
+libcurses-perl
 libcvc0
 libcvc-dbg
 libcwidget4
@@ -1769,6 +1772,7 @@ sgml-data
 shared-mime-info
 shim-signed
 simple-scan
+sl
 slick-greeter
 smbclient
 software-properties-common

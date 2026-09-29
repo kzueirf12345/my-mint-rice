@@ -6,7 +6,6 @@
       "titleBar.activeForeground": "#ffffff"
     }
   },
-  "window.titleBarStyle": "custom",
   "cmake.configureOnOpen": true,
   "cmake.pinnedCommands": [
     "workbench.action.tasks.configureTaskRunner",
@@ -230,5 +229,6 @@
     "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
     "terminal.integrated.fontSize": 13,
     "workbench.colorTheme": "Catppuccin Mocha",
-    "workbench.iconTheme": "catppuccin-mocha"
+    "workbench.iconTheme": "catppuccin-mocha",
+    "window.titleBarStyle": "native"
 }
