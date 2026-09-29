@@ -212,6 +212,31 @@ fi
 # cookies, passwords, sessions, storage, tokens, etc.
 
 echo
+
+echo
+echo "==> Portable normalization"
+
+# Spicetify: replace machine-specific HOME with ~
+if [[ -f "$ROOT/configs/spicetify/config-xpui.ini" ]]; then
+    sed -i \
+        "s#$HOME/.config/spotify/prefs#~/.config/spotify/prefs#g" \
+        "$ROOT/configs/spicetify/config-xpui.ini"
+fi
+
+# btop: use theme name instead of absolute path
+if [[ -f "$ROOT/configs/btop/btop.conf" ]]; then
+    sed -i \
+        -E 's#^color_theme = ".*catppuccin_mocha\.theme"$#color_theme = "catppuccin_mocha"#' \
+        "$ROOT/configs/btop/btop.conf"
+fi
+
+# Scripts used by Cinnamon / CommandRunner
+if [[ -f "$HOME/Templates/vpn-toggle.sh" ]]; then
+    mkdir -p "$ROOT/configs/scripts"
+    cp -a "$HOME/Templates/vpn-toggle.sh" \
+          "$ROOT/configs/scripts/vpn-toggle.sh"
+fi
+
 echo "==> Finished."
 echo
 echo "Snapshot: $(date)"

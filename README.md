@@ -689,7 +689,7 @@ Current configuration:
 [Greeter]
 only-on-monitor=eDP
 enable-hidpi=off
-background=/usr/share/backgrounds/urodish/login-wallpaper.png
+background=/usr/share/backgrounds/mint-rice/login-wallpaper.png
 theme-name=Catppuccin-Pink-Dark-B
 icon-theme-name=Tela-circle-pink
 cursor-theme-name=catppuccin-mocha-pink-cursors
@@ -737,19 +737,19 @@ The wallpaper must be readable before the user logs in.
 System location:
 
 ```text
-/usr/share/backgrounds/urodish/login-wallpaper.png
+/usr/share/backgrounds/mint-rice/login-wallpaper.png
 ```
 
 Installation:
 
 ```bash
-sudo mkdir -p /usr/share/backgrounds/urodish
+sudo mkdir -p /usr/share/backgrounds/mint-rice
 
 sudo cp wallpapers/wallpaper-5k.png \
-  /usr/share/backgrounds/urodish/login-wallpaper.png
+  /usr/share/backgrounds/mint-rice/login-wallpaper.png
 
 sudo chmod 644 \
-  /usr/share/backgrounds/urodish/login-wallpaper.png
+  /usr/share/backgrounds/mint-rice/login-wallpaper.png
 ```
 
 Themes used by LightDM also need to be available system-wide.

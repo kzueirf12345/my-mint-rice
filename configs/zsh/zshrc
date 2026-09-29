@@ -110,3 +110,4 @@ alias fgrep='grep -F --color=auto'
 
 alias diff='diff --color=auto'
 export PATH="$HOME/.spicetify:$PATH"
+setopt INTERACTIVE_COMMENTS
