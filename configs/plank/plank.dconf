@@ -1,0 +1,7 @@
+[docks/dock1]
+active-display=false
+dock-items=['nemo.dockitem', 'kitty.dockitem', 'org.telegram.desktop.dockitem', 'firefox.dockitem', 'org.gnome.Calculator.dockitem', 'spotify.dockitem', 'com.microsoft.VSCode.dockitem']
+monitor=''
+theme='Catppuccin-mocha'
+zoom-enabled=true
+zoom-percent=130

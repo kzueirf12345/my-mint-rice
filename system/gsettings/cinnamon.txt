@@ -1,0 +1,127 @@
+org.cinnamon allow-other-notification-handlers false
+org.cinnamon alttab-minimized-aware true
+org.cinnamon alttab-switcher-delay 100
+org.cinnamon alttab-switcher-enforce-primary-monitor false
+org.cinnamon alttab-switcher-show-all-workspaces false
+org.cinnamon alttab-switcher-show-current-monitor false
+org.cinnamon alttab-switcher-style 'icons+thumbnails'
+org.cinnamon alttab-switcher-warp-mouse-pointer false
+org.cinnamon app-menu-icon-name 'linuxmint-logo-ring-symbolic'
+org.cinnamon app-menu-label ''
+org.cinnamon applet-cache-updated 0
+org.cinnamon bring-windows-to-current-workspace false
+org.cinnamon center-warped-pointer true
+org.cinnamon cinnamon-settings-advanced false
+org.cinnamon command-history ['r']
+org.cinnamon date-format 'YYYY-MM-DD'
+org.cinnamon demands-attention-ignored-wm-classes @as []
+org.cinnamon demands-attention-passthru-wm-classes ['gnome-screenshot', 'lxterminal', 'xfce4-terminal', 'firefox', 'libreoffice', 'soffice']
+org.cinnamon desklet-cache-updated 0
+org.cinnamon desklet-decorations 1
+org.cinnamon desklet-snap true
+org.cinnamon desklet-snap-interval 25
+org.cinnamon desktop-effects true
+org.cinnamon desktop-effects-change-size true
+org.cinnamon desktop-effects-close 'traditional'
+org.cinnamon desktop-effects-map 'traditional'
+org.cinnamon desktop-effects-minimize 'traditional'
+org.cinnamon desktop-effects-on-dialogs false
+org.cinnamon desktop-effects-on-menus true
+org.cinnamon desktop-effects-workspace true
+org.cinnamon desktop-layout ''
+org.cinnamon development-tools true
+org.cinnamon device-aliases @as []
+org.cinnamon disabled-open-search-providers @as []
+org.cinnamon edge-flip-delay 1000
+org.cinnamon enable-app-monitoring true
+org.cinnamon enable-edge-flip false
+org.cinnamon enable-indicators false
+org.cinnamon enable-nm-agent true
+org.cinnamon enable-polkit-agent true
+org.cinnamon enable-ssh-agent true
+org.cinnamon enable-vfade true
+org.cinnamon enabled-applets ['panel1:left:2:separator@cinnamon.org:1', 'panel1:right:3:systray@cinnamon.org:3', 'panel1:right:4:xapp-status@cinnamon.org:4', 'panel1:right:5:notifications@cinnamon.org:5', 'panel1:right:6:printers@cinnamon.org:6', 'panel1:right:7:removable-drives@cinnamon.org:7', 'panel1:right:8:keyboard@cinnamon.org:8', 'panel1:right:9:favorites@cinnamon.org:9', 'panel1:right:10:network@cinnamon.org:10', 'panel1:right:11:sound@cinnamon.org:11', 'panel1:right:12:power@cinnamon.org:12', 'panel1:right:13:calendar@cinnamon.org:13', 'panel1:right:14:cornerbar@cinnamon.org:14', 'panel1:right:1:CommandRunner@appdevsw:16', 'panel1:left:0:Cinnamenu@json:17']
+org.cinnamon enabled-desklets @as []
+org.cinnamon enabled-extensions @as []
+org.cinnamon enabled-search-providers @as []
+org.cinnamon extension-cache-updated 0
+org.cinnamon favorite-apps ['org.gnome.Calculator.desktop', 'org.gnome.Calendar.desktop', 'org.x.editor.desktop', 'mintinstall.desktop', 'cinnamon-settings.desktop']
+org.cinnamon hotcorner-fullscreen false
+org.cinnamon hotcorner-layout ['expo:false:0', 'scale:false:0', 'scale:false:0', 'desktop:false:0']
+org.cinnamon hoverclick-action 'single'
+org.cinnamon hoverclick-layout 'vertical::both'
+org.cinnamon hoverclick-position ''
+org.cinnamon lock-desklets false
+org.cinnamon looking-glass-history @as []
+org.cinnamon next-applet-id 18
+org.cinnamon next-desklet-id 0
+org.cinnamon no-adjacent-panel-barriers false
+org.cinnamon number-workspaces 0
+org.cinnamon overview-corner ['DEPRECATED']
+org.cinnamon panel-edit-mode false
+org.cinnamon panel-launchers ['DEPRECATED']
+org.cinnamon panel-launchers-draggable true
+org.cinnamon panel-scale-text-icons true
+org.cinnamon panel-zone-icon-sizes '[{"panelId": 1, "left": 48, "center": 0, "right": 24}]'
+org.cinnamon panel-zone-symbolic-icon-sizes '[{"panelId": 1, "left": 28, "center": 28, "right": 16}]'
+org.cinnamon panel-zone-text-sizes '[{"panelId": 1, "left": 6.0, "center": 0.0, "right": 0.0}]'
+org.cinnamon panels-autohide ['1:false']
+org.cinnamon panels-enabled ['1:0:top']
+org.cinnamon panels-height ['1:30']
+org.cinnamon panels-hide-delay ['1:0']
+org.cinnamon panels-show-delay ['1:0']
+org.cinnamon prevent-focus-stealing false
+org.cinnamon run-dialog-aliases @as []
+org.cinnamon run-dialog-show-completions true
+org.cinnamon saved-im-presence 1
+org.cinnamon saved-session-presence 0
+org.cinnamon show-media-keys-osd true
+org.cinnamon show-snap-osd true
+org.cinnamon show-tile-hud true
+org.cinnamon startup-animation true
+org.cinnamon startup-icon-name ''
+org.cinnamon system-icon 'linuxmint-logo-ring-symbolic'
+org.cinnamon window-effect-speed 1
+org.cinnamon workspace-expo-primary-monitor true
+org.cinnamon workspace-expo-view-as-grid true
+org.cinnamon workspace-name-overrides ['DEPRECATED']
+org.cinnamon workspace-osd-visible true
+org.cinnamon.desklets.launcher launcher-list @as []
+org.cinnamon.keyboard activation-mode 'on-demand'
+org.cinnamon.keyboard keyboard-position 'top'
+org.cinnamon.keyboard keyboard-size 3
+org.cinnamon.keyboard keyboard-type 'tablet'
+org.cinnamon.launcher check-frequency 300
+org.cinnamon.launcher memory-limit 2048
+org.cinnamon.launcher memory-limit-enabled true
+org.cinnamon.recorder file-extension 'webm'
+org.cinnamon.recorder framerate 15
+org.cinnamon.recorder pipeline ''
+org.cinnamon.sounds close-enabled false
+org.cinnamon.sounds close-file '/usr/share/mint-artwork/sounds/close.oga'
+org.cinnamon.sounds login-enabled true
+org.cinnamon.sounds login-file '/usr/share/mint-artwork/sounds/login.oga'
+org.cinnamon.sounds logout-enabled true
+org.cinnamon.sounds logout-file '/usr/share/mint-artwork/sounds/logout.ogg'
+org.cinnamon.sounds map-enabled false
+org.cinnamon.sounds map-file '/usr/share/mint-artwork/sounds/map.oga'
+org.cinnamon.sounds maximize-enabled false
+org.cinnamon.sounds maximize-file '/usr/share/mint-artwork/sounds/maximize.oga'
+org.cinnamon.sounds minimize-enabled false
+org.cinnamon.sounds minimize-file '/usr/share/mint-artwork/sounds/minimize.oga'
+org.cinnamon.sounds notification-enabled true
+org.cinnamon.sounds notification-file '/usr/share/mint-artwork/sounds/notification.oga'
+org.cinnamon.sounds plug-enabled true
+org.cinnamon.sounds plug-file '/usr/share/mint-artwork/sounds/plug.oga'
+org.cinnamon.sounds switch-enabled true
+org.cinnamon.sounds switch-file '/usr/share/mint-artwork/sounds/switch.oga'
+org.cinnamon.sounds tile-enabled true
+org.cinnamon.sounds tile-file '/usr/share/mint-artwork/sounds/tile.oga'
+org.cinnamon.sounds unmaximize-enabled false
+org.cinnamon.sounds unmaximize-file '/usr/share/mint-artwork/sounds/unmaximize.oga'
+org.cinnamon.sounds unplug-enabled true
+org.cinnamon.sounds unplug-file '/usr/share/mint-artwork/sounds/unplug.oga'
+org.cinnamon.theme gtk-version-scrollbar-multiplier 1.5
+org.cinnamon.theme name 'Catppuccin-Pink-Dark-B'
+org.cinnamon.theme symbolic-relative-size 0.67000000000000004
+org.cinnamon.theme theme-cache-updated 0

@@ -1,0 +1,12 @@
+Linux Mint: "Linux Mint 22.3"
+Kernel: 7.0.0-34-generic
+Cinnamon: Cinnamon 6.6.9
+Zsh: zsh 5.9 (x86_64-ubuntu-linux-gnu)
+Starship: starship 1.26.0
+Kitty: kitty 0.32.2 created by Kovid Goyal
+btop: btop version: 1.3.0
+VS Code: 1.139.1
+Spicetify: 2.45.1
+Spotify: 1:1.2.95.453.g0eeebbed
+Slick Greeter: 2.2.6+zena
+Plank: 0.11.172-1

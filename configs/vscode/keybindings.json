@@ -1,0 +1,52 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+	{
+		"key": "f9",
+		"command": "cmake.launchTarget",
+		"when": "cmake:enableFullFeatureSet && !cmake:hideDebugCommand && !inDebugMode"
+	},
+	{
+		"key": "shift+f5",
+		"command": "-cmake.launchTarget",
+		"when": "cmake:enableFullFeatureSet && !cmake:hideDebugCommand && !inDebugMode"
+	},
+	{
+		"key": "f8",
+		"command": "cmake.debugTarget",
+		"when": "cmake:enableFullFeatureSet && inCMakeProject && !cmake:hideDebugCommand && !inDebugMode"
+	},
+	{
+		"key": "ctrl+f5",
+		"command": "-cmake.debugTarget",
+		"when": "cmake:enableFullFeatureSet && inCMakeProject && !cmake:hideDebugCommand && !inDebugMode"
+	},
+	{
+		"key": "ctrl+alt+shift",
+		"command": "editor.action.formatDocument",
+		"when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+	},
+	{
+		"key": "ctrl+shift+i",
+		"command": "-editor.action.formatDocument",
+		"when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+	},
+	{
+		"key": "ctrl+alt+shift",
+		"command": "editor.action.formatDocument.none",
+		"when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+	},
+	{
+		"key": "ctrl+shift+i",
+		"command": "-editor.action.formatDocument.none",
+		"when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+	},
+	{
+		"key": "ctrl+shift+d",
+		"command": "C_Cpp.GenerateDoxygenComment"
+	},
+	{
+		"key": "ctrl+shift+d",
+		"command": "-workbench.view.debug",
+		"when": "viewContainer.workbench.view.debug.enabled"
+	}
+]

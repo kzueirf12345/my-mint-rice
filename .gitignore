@@ -1,0 +1,32 @@
+# Secrets
+*.key
+*.pem
+*.token
+*credentials*
+*secret*
+.env
+.env.*
+
+# Browser private data
+cookies*
+logins.json
+key4.db
+sessionstore*
+places.sqlite
+storage/
+cache/
+Cache/
+
+# Telegram sessions
+tdata/
+
+# SSH / GPG
+.ssh/
+.gnupg/
+
+# Temporary
+*.log
+*.tmp
+*~
+.DS_Store
+system-inventory.txt

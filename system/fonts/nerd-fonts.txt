@@ -1,0 +1,42 @@
+JetBrainsMono Nerd Font,JetBrainsMono NF
+JetBrainsMono Nerd Font,JetBrainsMono NF,JetBrainsMono NF ExtraBold
+JetBrainsMono Nerd Font,JetBrainsMono NF,JetBrainsMono NF ExtraLight
+JetBrainsMono Nerd Font,JetBrainsMono NF,JetBrainsMono NF Light
+JetBrainsMono Nerd Font,JetBrainsMono NF,JetBrainsMono NF Medium
+JetBrainsMono Nerd Font,JetBrainsMono NF,JetBrainsMono NF SemiBold
+JetBrainsMono Nerd Font,JetBrainsMono NF,JetBrainsMono NF Thin
+JetBrainsMono Nerd Font Mono,JetBrainsMono NFM
+JetBrainsMono Nerd Font Mono,JetBrainsMono NFM,JetBrainsMono NFM ExtraBold
+JetBrainsMono Nerd Font Mono,JetBrainsMono NFM,JetBrainsMono NFM ExtraLight
+JetBrainsMono Nerd Font Mono,JetBrainsMono NFM,JetBrainsMono NFM Light
+JetBrainsMono Nerd Font Mono,JetBrainsMono NFM,JetBrainsMono NFM Medium
+JetBrainsMono Nerd Font Mono,JetBrainsMono NFM,JetBrainsMono NFM SemiBold
+JetBrainsMono Nerd Font Mono,JetBrainsMono NFM,JetBrainsMono NFM Thin
+JetBrainsMono Nerd Font Propo,JetBrainsMono NFP
+JetBrainsMono Nerd Font Propo,JetBrainsMono NFP,JetBrainsMono NFP ExtraBold
+JetBrainsMono Nerd Font Propo,JetBrainsMono NFP,JetBrainsMono NFP ExtraLight
+JetBrainsMono Nerd Font Propo,JetBrainsMono NFP,JetBrainsMono NFP Light
+JetBrainsMono Nerd Font Propo,JetBrainsMono NFP,JetBrainsMono NFP Medium
+JetBrainsMono Nerd Font Propo,JetBrainsMono NFP,JetBrainsMono NFP SemiBold
+JetBrainsMono Nerd Font Propo,JetBrainsMono NFP,JetBrainsMono NFP Thin
+JetBrainsMonoNL Nerd Font,JetBrainsMonoNL NF
+JetBrainsMonoNL Nerd Font,JetBrainsMonoNL NF,JetBrainsMonoNL NF ExtraBold
+JetBrainsMonoNL Nerd Font,JetBrainsMonoNL NF,JetBrainsMonoNL NF ExtraLight
+JetBrainsMonoNL Nerd Font,JetBrainsMonoNL NF,JetBrainsMonoNL NF Light
+JetBrainsMonoNL Nerd Font,JetBrainsMonoNL NF,JetBrainsMonoNL NF Medium
+JetBrainsMonoNL Nerd Font,JetBrainsMonoNL NF,JetBrainsMonoNL NF SemiBold
+JetBrainsMonoNL Nerd Font,JetBrainsMonoNL NF,JetBrainsMonoNL NF Thin
+JetBrainsMonoNL Nerd Font Mono,JetBrainsMonoNL NFM
+JetBrainsMonoNL Nerd Font Mono,JetBrainsMonoNL NFM,JetBrainsMonoNL NFM ExtraBold
+JetBrainsMonoNL Nerd Font Mono,JetBrainsMonoNL NFM,JetBrainsMonoNL NFM ExtraLight
+JetBrainsMonoNL Nerd Font Mono,JetBrainsMonoNL NFM,JetBrainsMonoNL NFM Light
+JetBrainsMonoNL Nerd Font Mono,JetBrainsMonoNL NFM,JetBrainsMonoNL NFM Medium
+JetBrainsMonoNL Nerd Font Mono,JetBrainsMonoNL NFM,JetBrainsMonoNL NFM SemiBold
+JetBrainsMonoNL Nerd Font Mono,JetBrainsMonoNL NFM,JetBrainsMonoNL NFM Thin
+JetBrainsMonoNL Nerd Font Propo,JetBrainsMonoNL NFP
+JetBrainsMonoNL Nerd Font Propo,JetBrainsMonoNL NFP,JetBrainsMonoNL NFP ExtraBold
+JetBrainsMonoNL Nerd Font Propo,JetBrainsMonoNL NFP,JetBrainsMonoNL NFP ExtraLight
+JetBrainsMonoNL Nerd Font Propo,JetBrainsMonoNL NFP,JetBrainsMonoNL NFP Light
+JetBrainsMonoNL Nerd Font Propo,JetBrainsMonoNL NFP,JetBrainsMonoNL NFP Medium
+JetBrainsMonoNL Nerd Font Propo,JetBrainsMonoNL NFP,JetBrainsMonoNL NFP SemiBold
+JetBrainsMonoNL Nerd Font Propo,JetBrainsMonoNL NFP,JetBrainsMonoNL NFP Thin

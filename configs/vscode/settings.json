@@ -1,0 +1,234 @@
+{
+  // settings theme vscode
+  "workbench.colorCustomizations": {
+    "[One Dark Pro]": {
+      "titleBar.activeBackground": "#21252b",
+      "titleBar.activeForeground": "#ffffff"
+    }
+  },
+  "window.titleBarStyle": "custom",
+  "cmake.configureOnOpen": true,
+  "cmake.pinnedCommands": [
+    "workbench.action.tasks.configureTaskRunner",
+    "workbench.action.tasks.runTask"
+  ],
+
+  // add latex build flags for minted package
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "--shell-escape",
+        "-pdf",
+        "%DOC%"
+      ]
+    },
+    {
+      "name": "pdflatex",
+      "command": "pdflatex",
+      "args": [
+        "--shell-escape",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
+      ]
+    },
+    {
+      "name": "bibtex",
+      "command": "bibtex",
+      "args": ["%DOCFILE%"],
+      "env": {}
+    },
+    {
+      "name": "pdflatex",
+      "command": "pdflatex",
+      "args": ["-shell-escape", "%DOC%"]
+    }
+  ],
+
+  //json formater
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cmake.showOptionsMovedNotification": false,
+  "explorer.confirmDelete": false,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4 , ArrayInitializerAlignmentStyle: // Right, ColumnLimit: 100}",
+  "workbench.settings.applyToAllProfiles": [
+    "C_Cpp.clang_format_fallbackStyle"
+  ],
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "files.autoSave": "onFocusChange",
+  "makefile.configureOnOpen": true,
+  "editor.rulers": [
+    100
+  ],
+  "explorer.compactFolders": false,
+  "workbench.editorAssociations": {
+    "*.bin": "hexEditor.hexedit"
+  },
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.enabled": false,
+  "liveServer.settings.donotVerifyTags": true,
+  "C_Cpp.errorSquiggles": "enabled",
+  "vscode-pets.theme": "castle",
+  "vscode-pets.throwBallWithMouse": true,
+  "powermode.enabled": true,
+  "editor.formatOnPaste": false,
+  "cSpell.language": "en,ru",
+  "cSpell.userWords": [
+    "вайба",
+    "виртуализацией",
+    "времязатраных",
+    "дебагером",
+    "декомпиляции",
+    "интринсиками",
+    "интринсиках",
+    "интринсики",
+    "интринсиков",
+    "Линковка",
+    "логгера",
+    "МФТИ",
+    "Неоптимизированная",
+    "низкопроизводительным",
+    "оверхедом",
+    "пропагации",
+    "СДВГ",
+    "слинки",
+    "ФРКТ",
+    "хэша",
+    "cpupower",
+    "crackme",
+    "DCMAKE",
+    "endp",
+    "Ghidra",
+    "graphviz",
+    "immintrin",
+    "Inderect",
+    "lassert",
+    "Lomaem",
+    "Mandelbrat",
+    "Mephi",
+    "nasm",
+    "rdtsc",
+    "retf",
+    "setr",
+    "SFML",
+    "vzlom"
+  ],
+  "explorer.confirmPasteNative": false,
+
+  "commentAnchors.tags.anchors": {
+        "roflanEbalo": {
+            "iconColor": "red",
+            "highlightColor": "#F44336",
+            "scope": "workspace"
+        },
+        "Я ХОЧУ В БАЙКААААААЛ": {
+            "iconColor": "blue",
+            "highlightColor": "#14A2B6",
+            "scope": "workspace"
+        },
+        "ПОПКА (БУМ БУМ БУМ?)": {
+            "iconColor": "red",
+            "highlightColor": "#F0B1A8",
+            "scope": "workspace"
+        },
+        "Я НЕ ЗНАЮ, Я НЕ ЗНАЮ, Я НЕ ЗНАЮ, ПОЧЕМУ НЕОЧЕВИДНО???": {
+            "iconColor": "red",
+            "highlightColor": "#B0FAAA",
+            "scope": "workspace"
+        },
+        "ПЕДИК, ЧТО ЗА ХУЙНЮ ТЫ НАПИСАЛ?": {
+            "iconColor": "red",
+            "highlightColor": "#D3A1B7",
+            "scope": "workspace"
+        },
+        "ANCHOR": {
+            "iconColor": "default",
+            "highlightColor": "#A8C023",
+            "scope": "file"
+        },
+        "TODO": {
+            "iconColor": "blue",
+            "highlightColor": "#3ea8ff",
+            "scope": "workspace"
+        },
+        "FIXME": {
+            "iconColor": "red",
+            "highlightColor": "#F44336",
+            "scope": "workspace"
+        },
+        "STUB": {
+            "iconColor": "purple",
+            "highlightColor": "#BA68C8",
+            "scope": "file"
+        },
+        "NOTE": {
+            "iconColor": "orange",
+            "highlightColor": "#FFB300",
+            "scope": "file"
+        },
+        "REVIEW": {
+            "iconColor": "green",
+            "highlightColor": "#64DD17",
+            "scope": "workspace"
+        },
+        "SECTION": {
+            "iconColor": "blurple",
+            "highlightColor": "#896afc",
+            "scope": "workspace",
+            "behavior": "region"
+        },
+        "LINK": {
+            "iconColor": "#2ecc71",
+            "highlightColor": "#2ecc71",
+            "scope": "workspace",
+            "behavior": "link"
+        }
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "clangd.path": "/home/baikal.int/v.popov/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/22.1.0/clangd_22.1.0/bin/clangd",
+    "editor.inlayHints.enabled": "off",
+    "cmake.options.statusBarVisibility": "compact",
+    "github.copilot.nextEditSuggestions.enabled": false,
+    "github.copilot.enable": {
+      "*": false,
+      "plaintext": false,
+      "markdown": false,
+      "scminput": false,
+      "cpp": false
+    },
+    "git.ignoreRebaseWarning": true,
+    "git.blame.editorDecoration.enabled": false,
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "terminal.integrated.initialHint": false,
+    "workbench.editor.empty.hint": "hidden",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "clangd.arguments": [
+      "-compile-commands-dir=/tmp/vscode-build -header-insertion=never"
+    ],
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "breadcrumbs.enabled": false,
+    "jupyter.widgetScriptSources": [
+      "jsdelivr.com",
+      "unpkg.com"
+    ],
+    "editor.fontFamily": "'JetBrainsMono Nerd Font Mono', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 14,
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
+    "terminal.integrated.fontSize": 13,
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.iconTheme": "catppuccin-mocha"
+}

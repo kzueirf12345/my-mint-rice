@@ -1,0 +1,112 @@
+# ==============================
+# History
+# ==============================
+
+HISTFILE="$HOME/.zsh_history"
+HISTSIZE=10000
+SAVEHIST=10000
+
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_FIND_NO_DUPS
+setopt SHARE_HISTORY
+
+# cd Downloads -> cd without explicitly typing cd
+setopt AUTO_CD
+
+
+# ==============================
+# Completion
+# ==============================
+
+autoload -Uz compinit
+compinit
+
+# Tab opens selectable completion menu
+zstyle ':completion:*' menu select
+
+# Case-insensitive completion
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+
+# Use LS_COLORS in completion
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+
+
+# ==============================
+# Key bindings
+# ==============================
+
+# Familiar Emacs/readline-style controls
+bindkey -e
+
+# Ctrl + Left / Right — move by words
+bindkey '^[[1;5D' backward-word
+bindkey '^[[1;5C' forward-word
+
+# Ctrl + Backspace — delete previous word
+bindkey '^H' backward-kill-word
+
+# Ctrl + Delete — delete next word
+bindkey '^[[3;5~' kill-word
+
+# Home / End
+bindkey '^[[H' beginning-of-line
+bindkey '^[[F' end-of-line
+bindkey '^[[1~' beginning-of-line
+bindkey '^[[4~' end-of-line
+
+
+# ==============================
+# History search
+# ==============================
+
+autoload -Uz up-line-or-beginning-search
+autoload -Uz down-line-or-beginning-search
+
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+
+bindkey '^[[A' up-line-or-beginning-search
+bindkey '^[[B' down-line-or-beginning-search
+
+
+# ==============================
+# Autosuggestions
+# ==============================
+
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Right arrow accepts gray suggestion
+bindkey '^[[C' autosuggest-accept
+
+
+# ==============================
+# Syntax highlighting
+# Keep this near the end
+# ==============================
+
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
+# ==============================
+# Starship
+# ==============================
+
+eval "$(starship init zsh)"
+
+# ---------- Colored CLI output ----------
+
+# GNU coreutils colors
+eval "$(dircolors -b)"
+
+alias ls='ls --color=auto'
+alias ll='ls -lah --color=auto'
+alias la='ls -A --color=auto'
+alias l='ls -CF --color=auto'
+
+alias grep='grep --color=auto'
+alias egrep='grep -E --color=auto'
+alias fgrep='grep -F --color=auto'
+
+alias diff='diff --color=auto'
+export PATH="$HOME/.spicetify:$PATH"

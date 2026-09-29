@@ -1,0 +1,169 @@
+[/]
+alttab-switcher-delay=100
+command-history=['r']
+desklet-snap-interval=25
+desktop-effects-map='traditional'
+desktop-effects-on-dialogs=false
+enabled-applets=['panel1:left:2:separator@cinnamon.org:1', 'panel1:right:3:systray@cinnamon.org:3', 'panel1:right:4:xapp-status@cinnamon.org:4', 'panel1:right:5:notifications@cinnamon.org:5', 'panel1:right:6:printers@cinnamon.org:6', 'panel1:right:7:removable-drives@cinnamon.org:7', 'panel1:right:8:keyboard@cinnamon.org:8', 'panel1:right:9:favorites@cinnamon.org:9', 'panel1:right:10:network@cinnamon.org:10', 'panel1:right:11:sound@cinnamon.org:11', 'panel1:right:12:power@cinnamon.org:12', 'panel1:right:13:calendar@cinnamon.org:13', 'panel1:right:14:cornerbar@cinnamon.org:14', 'panel1:right:1:CommandRunner@appdevsw:16', 'panel1:left:0:Cinnamenu@json:17']
+enabled-desklets=@as []
+enabled-extensions=@as []
+hotcorner-layout=['expo:false:0', 'scale:false:0', 'scale:false:0', 'desktop:false:0']
+next-applet-id=18
+no-adjacent-panel-barriers=false
+panel-edit-mode=false
+panel-zone-icon-sizes='[{"panelId": 1, "left": 48, "center": 0, "right": 24}]'
+panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 28, "center": 28, "right": 16}]'
+panel-zone-text-sizes='[{"panelId": 1, "left": 6.0, "center": 0.0, "right": 0.0}]'
+panels-autohide=['1:false']
+panels-enabled=['1:0:top']
+panels-height=['1:30']
+panels-show-delay=['1:0']
+window-effect-speed=1
+
+[cinnamon-session]
+quit-time-delay=60
+
+[desktop/a11y/applications]
+screen-magnifier-enabled=false
+
+[desktop/a11y/keyboard]
+bouncekeys-delay=300
+mousekeys-accel-time=300
+mousekeys-init-delay=300
+mousekeys-max-speed=10
+slowkeys-delay=300
+
+[desktop/a11y/magnifier]
+mag-factor=1.0
+
+[desktop/a11y/mouse]
+dwell-threshold=10
+dwell-time=1.2
+secondary-click-time=1.2
+
+[desktop/applications/calculator]
+exec='gnome-calculator'
+
+[desktop/applications/terminal]
+exec='kitty'
+exec-arg=''
+
+[desktop/background]
+picture-options='zoom'
+picture-uri='file:///home/urodish/Pictures/wallpaper-5k.png'
+
+[desktop/background/slideshow]
+delay=15
+image-source='xml:///usr/share/cinnamon-background-properties/linuxmint.xml'
+
+[desktop/input-sources]
+sources=[('xkb', 'us'), ('xkb', 'ru')]
+
+[desktop/interface]
+cursor-blink-time=1200
+cursor-size=24
+cursor-theme='catppuccin-mocha-pink-cursors'
+gtk-theme='Catppuccin-Pink-Dark-B'
+gtk-theme-backup='Mint-Y-Dark-Pink'
+icon-theme='Tela-circle-pink-dark'
+icon-theme-backup='Mint-Y-Pink'
+keyboard-layout-prefer-variant-names=false
+keyboard-layout-show-flags=false
+keyboard-layout-use-upper=true
+text-scaling-factor=1.25
+toolkit-accessibility=false
+
+[desktop/keybindings]
+custom-list=['custom0']
+looking-glass-keybinding=@as []
+
+[desktop/keybindings/custom-keybindings/custom0]
+binding=['<Primary><Alt>v']
+command='/home/urodish/Templates/vpn-toggle.sh'
+name='впн'
+
+[desktop/keybindings/media-keys]
+home=['<Super>e', 'XF86Explorer', '<Primary><Alt>h']
+screensaver=['<Control><Alt>l', 'XF86ScreenSaver', '<Super>l']
+
+[desktop/keybindings/wm]
+switch-input-source-backward=['<Shift>Meta_L', '<Alt>Shift_L']
+switch-to-workspace-down=['<Control><Alt>Down']
+switch-to-workspace-up=['<Control><Alt>Up']
+
+[desktop/media-handling]
+autorun-never=false
+
+[desktop/peripherals/keyboard]
+delay=uint32 500
+repeat-interval=uint32 30
+
+[desktop/peripherals/mouse]
+accel-profile='default'
+double-click=400
+drag-threshold=8
+speed=1.0
+
+[desktop/peripherals/touchpad]
+speed=0.77949709864603478
+
+[desktop/screensaver]
+layout-group=0
+use-custom-format=false
+
+[desktop/session]
+idle-delay=uint32 3600
+
+[desktop/sound]
+event-sounds=false
+
+[desktop/wm/preferences]
+min-window-opacity=30
+theme='Catppuccin-Pink-Dark-B'
+theme-backup='Mint-Y'
+
+[gestures]
+enabled=true
+pinch-percent-threshold=uint32 40
+swipe-down-2='PUSH_TILE_DOWN::end'
+swipe-down-3='TOGGLE_EXPO::::end'
+swipe-down-4='VOLUME_DOWN::end'
+swipe-left-2='PUSH_TILE_LEFT::end'
+swipe-left-3='WORKSPACE_NEXT::::start'
+swipe-left-4='WINDOW_WORKSPACE_PREVIOUS::end'
+swipe-percent-threshold=uint32 60
+swipe-right-2='PUSH_TILE_RIGHT::end'
+swipe-right-3='WORKSPACE_PREVIOUS::::start'
+swipe-right-4='WINDOW_WORKSPACE_NEXT::end'
+swipe-up-2='PUSH_TILE_UP::end'
+swipe-up-3='TOGGLE_OVERVIEW::::end'
+swipe-up-4='VOLUME_UP::end'
+tap-3='MEDIA_PLAY_PAUSE::end'
+
+[launcher]
+check-frequency=300
+memory-limit=2048
+
+[muffin]
+draggable-border-width=10
+experimental-features=['scale-monitor-framebuffer', 'x11-randr-fractional-scaling']
+workspace-cycle=true
+
+[muffin/x11]
+fractional-scale-mode='scale-ui-down'
+
+[settings-daemon/plugins/color]
+night-light-enabled=false
+night-light-last-coordinates=(55.755833000000003, 37.617778000000001)
+night-light-temperature=uint32 2700
+
+[settings-daemon/plugins/power]
+lid-close-ac-action='suspend'
+lid-close-battery-action='suspend'
+sleep-display-ac=0
+sleep-display-battery=0
+sleep-inactive-ac-timeout=0
+sleep-inactive-battery-timeout=0
+
+[theme]
+name='Catppuccin-Pink-Dark-B'
