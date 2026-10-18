@@ -913,13 +913,106 @@ git clone <repository> ~/my-mint-rice
 cd ~/my-mint-rice
 ```
 
-Install the required applications first.
+### Fresh Linux Mint 22.x Cinnamon (tested configuration: 22.3 / Cinnamon 6.6)
 
-Then restore user-level configuration:
+Run from a terminal in your normal Cinnamon desktop session, **not as root**.
+Internet access and sudo are required for the optional installer:
+
+```bash
+sudo apt-get update
+sudo apt-get install -y git
+```
+
+After cloning, install core applications and restore the rice:
+
+```bash
+./scripts/restore.sh --install-packages
+```
+
+This installs Kitty, btop, Zsh and its plugins, Plank, Firefox, dconf tools,
+GTK2 engines, Starship and JetBrainsMono Nerd Font. APT uses **your current
+repositories**, never the saved sources/package inventory. Starship is downloaded
+from its official GitHub release into `~/.local/bin`; Nerd Fonts v3.4.0 goes into
+`~/.local/share/fonts`. No downloaded shell scripts are executed.
+
+If those dependencies are already installed, restore configuration without APT
+or downloading Starship/fonts:
 
 ```bash
 ./scripts/restore.sh
 ```
+
+**Firefox:** launch it once to create a profile, then close it before restoring.
+If no profile exists, restore finishes with a warning; launch/close Firefox and
+rerun restore. Standard `~/.mozilla/firefox`, XDG and Flatpak profile locations
+are supported, as are absolute profile paths and installation defaults. When
+multiple profiles have no default, choose the default in Firefox first. The
+script installs FlexFox and enables stylesheet loading in `user.js`, preserving
+other preferences. It does not install browser extensions or the Firefox color
+theme; those remain manual. Close VS Code and Spotify during restore as well.
+
+**Recovery:** every run saves replaced files and the original Cinnamon/Plank
+dconf dumps in `~/.mint-rice-before-restore.*` (the exact path is printed).
+Only the named config/theme/spice directories are replaced; unrelated spices
+are left alone. To recover dconf in your desktop session, use:
+
+```bash
+dconf load /org/cinnamon/ < ~/.mint-rice-before-restore.XXXXXXXX/cinnamon.dconf
+dconf load /net/launchpad/plank/ < ~/.mint-rice-before-restore.XXXXXXXX/plank.dconf
+```
+
+Replace `XXXXXXXX` with the actual backup directory suffix. These commands
+restore saved keys; newly added keys may remain. Original files are stored under
+their home-relative paths inside the backup; copy back whichever you need.
+Do not publish these recovery directories: they can contain existing personal
+settings. No automatic rollback is performed if a restore fails halfway through.
+
+**After restore:** log out and back in. Plank autostart is configured when it is
+installed. To make Zsh your login shell, run `chsh -s "$(command -v zsh)"`.
+Monitor layout, fractional scaling, DPI, input devices, keyboard layouts,
+power settings and LightDM are deliberately not imported. Set those for the
+target machine manually. Cinnamon spice instance settings are restored too;
+the saved JSON contains only preference values (no menu history).
+
+**Optional applications:** VS Code, Spotify, Telegram and AmneziaWG are not
+installed by the core installer. Install them separately from their trusted
+sources. For the dock's Telegram launcher, use the system Flathub install
+(`flatpak install flathub org.telegram.desktop`). After installing VS Code,
+rerun restore to install the saved extensions; failed extensions produce warnings.
+Spicetify Marketplace and Spotify patching must be set up separately: the
+snapshot does not contain Marketplace's CustomApps/Extensions or a valid Spotify
+backup. A fresh Spicetify config therefore does not enable those absent assets,
+and an existing local Spicetify config is left untouched.
+
+**VPN:** credentials/configs are intentionally excluded. Until AmneziaWG is
+installed, the panel indicator reports “not configured”; the toggle explains
+what is missing. Configure the `Netherlands` interface separately or export
+`MINT_RICE_VPN_INTERFACE` in your desktop session. The toggle opens Kitty for
+sudo's password prompt; it does not install passwordless sudo rules.
+
+Do not install everything from `system/apt/manual-packages.txt` or import
+`system/apt/sources.txt`: those are historical inventories, including kernels,
+hardware-specific packages and third-party repositories, **not installer inputs**.
+Other Mint versions/desktop editions and Wayland are not validated targets.
+
+### Backup and checks
+
+`./scripts/backup.sh` must also run as your normal desktop user. It discovers the
+Firefox profile rather than using a fixed profile name, captures spice instance
+preferences, custom icons and Plank launchers, removes local clangd overrides and
+Spicetify backup state, and normalizes home paths. Review custom commands and all
+Git changes before publishing; custom commands can contain private data.
+
+Regression checks (no changes to your real HOME/dconf, no APT):
+
+```bash
+for script in scripts/*.sh configs/scripts/*.sh; do bash -n "$script" || break; done
+python3 -m unittest discover -s tests -v
+```
+
+The integration test uses a temporary HOME and private D-Bus session. It checks
+an absent Firefox profile, later profile creation, repeated restore and recovery
+copies. This is not a substitute for a full GUI smoke test in a fresh Mint VM.
 
 The restore script handles things such as:
 

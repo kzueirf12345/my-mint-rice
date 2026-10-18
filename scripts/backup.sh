@@ -3,6 +3,17 @@ set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
+if [[ $EUID -eq 0 ]]; then
+    echo 'Run backup as your normal desktop user, not root.' >&2
+    exit 1
+fi
+command -v python3 >/dev/null || { echo 'Install python3 first.' >&2; exit 1; }
+if ! command -v dconf >/dev/null || [[ -z "${DBUS_SESSION_BUS_ADDRESS:-}" ]]; then
+    echo 'Run backup inside the Cinnamon desktop session with dconf-cli installed.' >&2
+    exit 1
+fi
+dconf dump /org/cinnamon/ >/dev/null
+
 echo "==> Backing up rice to:"
 echo "    $ROOT"
 
@@ -95,13 +106,13 @@ if [[ -d "$HOME/.local/share/plank/themes/Catppuccin-mocha" ]]; then
 fi
 
 dconf dump /net/launchpad/plank/ \
-    > "$ROOT/configs/plank/plank.dconf" 2>/dev/null || true
+    > "$ROOT/configs/plank/plank.dconf"
 
 echo
 echo "==> Cinnamon"
 
 dconf dump /org/cinnamon/ \
-    > "$ROOT/configs/cinnamon/cinnamon.dconf" 2>/dev/null || true
+    > "$ROOT/configs/cinnamon/cinnamon.dconf"
 
 gsettings get org.cinnamon enabled-applets \
     > "$ROOT/configs/cinnamon/enabled-applets.txt" 2>/dev/null || true
@@ -122,6 +133,43 @@ if [[ -d "$HOME/.local/share/cinnamon/extensions" ]]; then
              "$ROOT/configs/cinnamon/extensions"
 fi
 
+if [[ -d "$HOME/.local/share/cinnamon/desklets" ]]; then
+    copy_dir "$HOME/.local/share/cinnamon/desklets" \
+             "$ROOT/configs/cinnamon/desklets"
+fi
+
+# JSON instance settings, not caches, histories or other application state.
+# Only settings for applets actually enabled in the captured panel layout.
+python3 - "$ROOT" <<'PY'
+import json
+import os
+from pathlib import Path
+import re
+import sys
+sys.path.insert(0, str(Path(sys.argv[1]) / 'scripts'))
+from portable import transform
+root = Path(sys.argv[1])
+home = Path(os.environ['HOME'])
+text = (root / 'configs/cinnamon/cinnamon.dconf').read_text()
+for uuid in set(re.findall(r"[':]([^':\[\]\s]+@[^':\[\]\s]+)", text)):
+    source = home / '.config/cinnamon/spices' / uuid
+    for path in source.glob('*.json'):
+        # Validate before publishing. Review custom command strings before commit.
+        json.loads(path.read_text())
+        dest = root / 'configs/cinnamon/spices' / uuid / path.name
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_text(transform('spices', path.read_text(), home))
+PY
+
+# Dock launchers carry the desktop-file references; dconf alone is not enough.
+if [[ -d "$HOME/.config/plank/dock1/launchers" ]]; then
+    copy_dir "$HOME/.config/plank/dock1/launchers" "$ROOT/configs/plank/launchers"
+    for launcher in "$ROOT/configs/plank/launchers/"*.dockitem; do
+        [[ -f "$launcher" ]] || continue
+        python3 "$ROOT/scripts/portable.py" backup launcher "$launcher" "$launcher"
+    done
+fi
+
 echo
 echo "==> LightDM"
 
@@ -140,7 +188,10 @@ echo
 echo "==> Icons"
 
 copy_dir "$HOME/.local/share/icons/Tela-circle-pink" \
-         "$ROOT/themes/icons/Tela-circle-pink"
+          "$ROOT/themes/icons/Tela-circle-pink"
+
+copy_dir "$HOME/.local/share/icons/hellokitty" \
+          "$ROOT/themes/icons/hellokitty"
 
 echo
 echo "==> Cursor"
@@ -157,8 +208,13 @@ copy_file "$HOME/Pictures/wallpaper.png" \
 copy_file "$HOME/Pictures/wallpaper-5k.png" \
           "$ROOT/wallpapers/wallpaper-5k.png"
 
-copy_file "$HOME/Pictures/tg_wallpapres.png" \
-          "$ROOT/wallpapers/telegram-wallpaper.png"
+if [[ -f "$HOME/Pictures/telegram-wallpaper.png" ]]; then
+    copy_file "$HOME/Pictures/telegram-wallpaper.png" \
+              "$ROOT/wallpapers/telegram-wallpaper.png"
+else
+    copy_file "$HOME/Pictures/tg_wallpapres.png" \
+              "$ROOT/wallpapers/telegram-wallpaper.png"
+fi
 
 echo
 echo "==> APT"
@@ -201,9 +257,9 @@ fc-list : family | grep -Ei 'JetBrains|Nerd' | sort -u \
 echo
 echo "==> Firefox / FlexFox"
 
-PROFILE="$HOME/.config/mozilla/firefox/0t81mpn3.default-release"
+PROFILE="$(python3 "$ROOT/scripts/portable.py" firefox)"
 
-if [[ -d "$PROFILE/chrome" ]]; then
+if [[ -n "$PROFILE" && -d "$PROFILE/chrome" ]]; then
     copy_dir "$PROFILE/chrome" \
              "$ROOT/configs/firefox/chrome"
 fi
@@ -236,6 +292,18 @@ if [[ -f "$HOME/Templates/vpn-toggle.sh" ]]; then
     cp -a "$HOME/Templates/vpn-toggle.sh" \
           "$ROOT/configs/scripts/vpn-toggle.sh"
 fi
+copy_file "$HOME/Templates/vpn-status.sh" "$ROOT/configs/scripts/vpn-status.sh"
+
+for spec in 'cinnamon configs/cinnamon/cinnamon.dconf' \
+            'plank configs/plank/plank.dconf' \
+            'spicetify configs/spicetify/config-xpui.ini' \
+            'vscode configs/vscode/settings.json' \
+            'zsh configs/zsh/zshrc'; do
+    read -r kind relative <<< "$spec"
+    if [[ -f "$ROOT/$relative" ]]; then
+        python3 "$ROOT/scripts/portable.py" backup "$kind" "$ROOT/$relative" "$ROOT/$relative"
+    fi
+done
 
 echo "==> Finished."
 echo

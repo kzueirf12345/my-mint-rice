@@ -25,6 +25,8 @@ tdata/
 .gnupg/
 
 # Temporary
+__pycache__/
+*.pyc
 *.log
 *.tmp
 *~

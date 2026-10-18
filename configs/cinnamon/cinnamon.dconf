@@ -50,7 +50,7 @@ exec-arg=''
 
 [desktop/background]
 picture-options='zoom'
-picture-uri='file:///home/urodish/Pictures/wallpaper-5k.png'
+picture-uri='file://@HOME@/Pictures/wallpaper-5k.png'
 
 [desktop/background/slideshow]
 delay=15
@@ -65,7 +65,7 @@ cursor-size=24
 cursor-theme='catppuccin-mocha-pink-cursors'
 gtk-theme='Catppuccin-Pink-Dark-B'
 gtk-theme-backup='Mint-Y-Dark-Pink'
-icon-theme='Tela-circle-pink-dark'
+icon-theme='Tela-circle-pink'
 icon-theme-backup='Mint-Y-Pink'
 keyboard-layout-prefer-variant-names=false
 keyboard-layout-show-flags=false
@@ -79,7 +79,7 @@ looking-glass-keybinding=@as []
 
 [desktop/keybindings/custom-keybindings/custom0]
 binding=['<Primary><Alt>v']
-command='/home/urodish/Templates/vpn-toggle.sh'
+command='"@HOME@/Templates/vpn-toggle.sh"'
 name='впн'
 
 [desktop/keybindings/media-keys]

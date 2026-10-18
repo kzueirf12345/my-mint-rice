@@ -197,7 +197,6 @@
     },
     "security.workspace.trust.untrustedFiles": "open",
     "workbench.secondarySideBar.defaultVisibility": "hidden",
-    "clangd.path": "/home/baikal.int/v.popov/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/22.1.0/clangd_22.1.0/bin/clangd",
     "editor.inlayHints.enabled": "off",
     "cmake.options.statusBarVisibility": "compact",
     "github.copilot.nextEditSuggestions.enabled": false,

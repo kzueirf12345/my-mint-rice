@@ -1,0 +1,8 @@
+{
+  "form_command": {"value": "\"@HOME@/Templates/vpn-status.sh\""},
+  "form_prefix": {"value": ""},
+  "form_suffix": {"value": ""},
+  "form_interval": {"value": "2"},
+  "form_interval_unit": {"value": "s"},
+  "form_click_command": {"value": "\"@HOME@/Templates/vpn-toggle.sh\""}
+}

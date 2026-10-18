@@ -2,6 +2,8 @@
 # History
 # ==============================
 
+export PATH="$HOME/.local/bin:$PATH"
+
 HISTFILE="$HOME/.zsh_history"
 HISTSIZE=10000
 SAVEHIST=10000
@@ -74,10 +76,11 @@ bindkey '^[[B' down-line-or-beginning-search
 # Autosuggestions
 # ==============================
 
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+[[ -r /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]] &&
+    source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Right arrow accepts gray suggestion
-bindkey '^[[C' autosuggest-accept
+(( $+widgets[autosuggest-accept] )) && bindkey '^[[C' autosuggest-accept
 
 
 # ==============================
@@ -85,14 +88,17 @@ bindkey '^[[C' autosuggest-accept
 # Keep this near the end
 # ==============================
 
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+[[ -r /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]] &&
+    source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
 # ==============================
 # Starship
 # ==============================
 
-eval "$(starship init zsh)"
+if command -v starship >/dev/null 2>&1; then
+    eval "$(starship init zsh)"
+fi
 
 # ---------- Colored CLI output ----------
 
@@ -113,5 +119,5 @@ export PATH="$HOME/.spicetify:$PATH"
 setopt INTERACTIVE_COMMENTS
 
 # opencode
-export PATH=/home/urodish/.opencode/bin:$PATH
+export PATH="$HOME/.opencode/bin:$PATH"
 export PATH="$HOME/.elan/bin:$PATH"
