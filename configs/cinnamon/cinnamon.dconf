@@ -83,11 +83,13 @@ command='/home/urodish/Templates/vpn-toggle.sh'
 name='впн'
 
 [desktop/keybindings/media-keys]
+area-screenshot=['<Shift>Print', '<Shift><Super>s']
 home=['<Super>e', 'XF86Explorer', '<Primary><Alt>h']
 screensaver=['<Control><Alt>l', 'XF86ScreenSaver', '<Super>l']
 
 [desktop/keybindings/wm]
-switch-input-source-backward=['<Shift>Meta_L', '<Alt>Shift_L']
+switch-input-source=['<Super>space', 'XF86Keyboard', '<Alt>Shift_L']
+switch-input-source-backward=['<Shift>Meta_L']
 switch-to-workspace-down=['<Control><Alt>Down']
 switch-to-workspace-up=['<Control><Alt>Up']
 
@@ -96,6 +98,8 @@ autorun-never=false
 
 [desktop/peripherals/keyboard]
 delay=uint32 500
+numlock-state=false
+repeat=true
 repeat-interval=uint32 30
 
 [desktop/peripherals/mouse]
@@ -119,6 +123,7 @@ event-sounds=false
 
 [desktop/wm/preferences]
 min-window-opacity=30
+num-workspaces=6
 theme='Catppuccin-Pink-Dark-B'
 theme-backup='Mint-Y'
 
@@ -151,6 +156,9 @@ workspace-cycle=true
 
 [muffin/x11]
 fractional-scale-mode='scale-ui-down'
+
+[settings-daemon/peripherals/touchscreen]
+orientation-lock=false
 
 [settings-daemon/plugins/color]
 night-light-enabled=false

@@ -148,6 +148,8 @@ dmz-cursor-theme
 dnsmasq-base
 dns-root-data
 docbook-xml
+docker-compose-v2
+docker.io
 dosfstools
 dpkg
 dpkg-dev
@@ -169,6 +171,7 @@ exfat-fuse
 exfatprogs
 exif
 fakeroot
+fastfetch
 fdisk
 ffmpegthumbnailer
 file
@@ -417,6 +420,7 @@ iso-codes
 iso-flag-png
 iucode-tool
 jfsutils
+just
 kbd
 kerneloops
 keyboard-configuration
@@ -1545,6 +1549,7 @@ nftables
 ntfs-3g
 nvidia-prime-applet
 ocl-icd-libopencl1
+okular
 onboard
 onboard-common
 openprinting-ppds
@@ -1623,6 +1628,7 @@ pulseaudio-utils
 python3
 python3.12
 python3.12-minimal
+python3.12-venv
 python3-apport
 python3-apt
 python3-aptdaemon
@@ -1688,6 +1694,7 @@ python3-pam
 python3-parted
 python3-pexpect
 python3-pil
+python3-pip
 python3-pkg-resources
 python3-png
 python3-problem-report
@@ -1733,6 +1740,7 @@ python3-xlrd
 python3-yaml
 python-apt-common
 python-babel-localedata
+python-is-python3
 python-nemo
 python-tinycss2-common
 qt5-gtk2-platformtheme

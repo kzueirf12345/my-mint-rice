@@ -230,5 +230,15 @@
     "terminal.integrated.fontSize": 13,
     "workbench.colorTheme": "Catppuccin Mocha",
     "workbench.iconTheme": "catppuccin-mocha",
-    "window.titleBarStyle": "native"
+    "window.titleBarStyle": "native",
+    "dev.containers.copyGitConfig": false,
+    "dev.containers.gitCredentialHelperConfigLocation": "none",
+    "[markdown]": {
+      "diffEditor.ignoreTrimWhitespace": false
+    },
+    "python.analysis.typeCheckingMode": "strict",
+    "lean4.alwaysAskBeforeInstallingLeanVersions": true,
+    "scm.repositories.selectionMode": "single",
+    "scm.repositories.visible": 0,
+    "window.commandCenter": false
 }

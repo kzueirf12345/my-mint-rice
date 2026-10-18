@@ -12,4 +12,5 @@ Suites: stable
 Components: main
 Architectures: amd64
 Signed-By: /usr/share/keyrings/microsoft.gpg
+deb [signed-by=/etc/apt/keyrings/zhangsongcui3371-fastfetch-noble.gpg] https://ppa.launchpadcontent.net/zhangsongcui3371/fastfetch/ubuntu noble main
 deb [signed-by=/usr/share/keyrings/zquestz-archive-keyring.gpg] https://zquestz.github.io/ppa/ubuntu ./

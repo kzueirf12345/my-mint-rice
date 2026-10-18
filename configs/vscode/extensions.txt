@@ -5,10 +5,10 @@ cheshirekow.cmake-format
 eirikpre.systemverilog
 esbenp.prettier-vscode
 exodiusstudios.comment-anchors
-github.github-vscode-theme
 github.remotehub
 james-yu.latex-workshop
 kevinrose.vsc-python-indent
+leanprover.lean4
 llvm-vs-code-extensions.vscode-clangd
 ms-python.debugpy
 ms-python.python
@@ -35,6 +35,7 @@ rights.nas-vscode
 ritwickdey.liveserver
 streetsidesoftware.code-spell-checker
 streetsidesoftware.code-spell-checker-russian
+tamasfe.even-better-toml
 twxs.cmake
 usernamehw.errorlens
 vallentin.vscode-bnf
